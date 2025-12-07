@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+/* Đổi đơn vị px sang rem */
+:root {
+  --primary-text-color: #171100;
+  background-color: #fffcf4;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* 1.6 rem = 16 px */
+  font-size: 1rem;
+}
+/* common css */
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* Viết css cho phần header */
+.header {
+  background-color: #fffcf4;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.header nav a {
+  font-size: 1.6rem;
+  line-height: 28px;
+  color: #5f5b53;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+.header nav a:hover {
+  /* lớp giả */
+  color: var(--primary-text-color);
+  text-shadow: 1px 0 0 currentColor;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+}
+.header nav {
+  display: flex;
+  margin-left: auto;
+  list-style: none;
+}
+.header nav .Home {
+  font-weight: 600;
+  color: var(--primary-text-color);
+}
+.header .main-constant {
+  width: 1170px;
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 24px);
+}
+.header nav .Home::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  background-color: var(--primary-text-color);
+  display: block;
+  position: relative;
+  top: -3px;
+  left: 21px;
+}
+.header .main-constant .body .btn {
+  width: 144px;
+  height: 50px;
+  font-size: 17px;
+  line-height: 50px;
+  background: var(--primary-text-color);
+  color: #fffcf4;
+  border-radius: 24.5px;
+  -webkit-border-radius: 24.5px;
+  -moz-border-radius: 24.5px;
+  -ms-border-radius: 24.5px;
+  -o-border-radius: 24.5px;
+  text-align: center;
+  margin-left: 49px;
+} /* Kết thúc css cho phần header */
