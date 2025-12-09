@@ -5,6 +5,7 @@
 :root {
   --primary-text-color: #171100;
   background-color: #fffcf4;
+  --font-body: "sen", sens-serif;
 }
 html {
   font-size: 62.5%;
@@ -26,7 +27,9 @@ ul {
   padding-top: 44px;
   padding-bottom: 44px;
 }
-
+.btn {
+  margin-left: 49px;
+}
 .header nav a {
   font-size: 1.6rem;
   line-height: 28px;
@@ -52,7 +55,7 @@ ul {
   font-weight: 600;
   color: var(--primary-text-color);
 }
-.header .main-constant {
+.main-constant {
   width: 1170px;
 
   margin-left: auto;
@@ -88,4 +91,119 @@ ul {
   -o-border-radius: 24.5px;
   text-align: center;
   margin-left: 49px;
-} /* Kết thúc css cho phần header */
+}
+/* Kết thúc css cho phần header */
+/* Hero section */
+.Hero {
+  background-color: #fffcf4;
+}
+
+.Hero .main-constant {
+  display: flex;
+}
+.Hero .left-box {
+  width: 48.7%;
+  position: relative;
+}
+.Hero .left-box > img {
+  width: 485px;
+  height: 685px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.Hero .left-box .sumory {
+  width: 270px;
+  height: 244px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 24px;
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+}
+.Hero .right-box {
+  width: 51.3%;
+  padding-left: 130px;
+}
+.Hero .left-box .item {
+  display: flex;
+  margin: 7px 0;
+  align-items: center;
+}
+.Hero .left-box .icon {
+  margin-right: 16px;
+  width: 48px;
+  height: 48px;
+}
+.Hero .left-box .courses-content span:first-child {
+  font-size: 1.4rem;
+  line-height: 26px;
+}
+.Hero .left-box .courses-content span:last-child {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 30px;
+}
+.Hero .left-box .item:first-child {
+  margin-top: 0px;
+}
+.Hero .left-box .item:last-child {
+  margin-bottom: 0px;
+}
+
+.Hero .left-box span {
+  display: block;
+}
+.Hero .right-box h1 {
+  font-family: var(--font-body);
+  font-weight: 700px;
+  font-size: 5.8rem;
+  width: 480px;
+  line-height: 68px;
+  letter-spacing: -2%;
+  color: #171100;
+}
+.Hero .right-box .p1 {
+  font-size: 1.8rem;
+  line-height: 30px;
+  color: #5f5b53;
+  margin-top: 28px;
+  margin: bottom 38px;
+}
+.Hero .right-box .cta {
+  display: flex;
+}
+.Hero .right-box .btn-see-courses {
+  background-color: #ffb900;
+  width: 180px;
+  line-height: 64px;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.Hero .right-box .btn-watch-video {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.Hero .cta .btn-see-courses {
+  padding-left: 43px;
+  padding-top: 3px;
+  align-items: center;
+  margin-right: -20px;
+}
+.Hero .right-box .stats {
+  display: flex;
+}
